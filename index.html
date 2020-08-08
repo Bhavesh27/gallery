@@ -1,0 +1,147 @@
+<doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <title>Quick Gallery</title>
+
+      <!-- Normalize.css -->
+      <link rel="stylesheet" href="css/normalize.css" />
+
+      <!-- Custom styles -->
+      <link rel="stylesheet" href="css/styles.css" />
+
+      <!-- Gallery styles -->
+      <link rel="stylesheet" href="css/gallery.css" />
+
+      <!-- Font Awesome -->
+      <link
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+      />
+
+      <!-- Google Font -->
+      <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans"
+        rel="stylesheet"
+      />
+    </head>
+    <body>
+      <div class="container">
+        <div class="row">
+          <section id="quickGallery" class="slideInLeft">
+            <div class="right"><button class="shuffle" onclick="shuffle()">Shuffle Me</button></div>
+            <h1>Gallery</h1>
+            <div class="galleryImage" id="car">
+              <i class="fa fa-times cross"  onclick="remove('car')" aria-hidden="true"></i>
+              <a
+                href="javascript:void(0);"
+                class="openBtn"
+                data-src="images/car-984159_640.jpg"
+              >
+                <img data-src="images/car-984159_640.jpg" src="https://via.placeholder.com/200" alt="car-984159_640.jpg" />
+              </a>
+            </div>
+            <!-- /.galleryImage -->
+            <div class="galleryImage" id="coffee">
+              <i class="fa fa-times cross"  onclick="remove('coffee')" aria-hidden="true"></i>
+              <a
+                href="javascript:void(0);"
+                class="openBtn"
+                data-src="images/coffee-983955_640.jpg"
+              >
+                <img
+                  data-src="images/coffee-983955_640.jpg"
+                  src="https://via.placeholder.com/200"
+                  alt="coffee-983955_640.jpg"
+                />
+              </a>
+            </div>
+            <!-- /.galleryImage -->
+            <div class="galleryImage" id="eagle">
+              <i class="fa fa-times cross"  onclick="remove('eagle')" aria-hidden="true"></i>
+              <a
+                href="javascript:void(0);"
+                class="openBtn"
+                data-src="images/eagle-1246681_640.jpg"
+              >
+                <img
+                  data-src="images/eagle-1246681_640.jpg"
+                  src="https://via.placeholder.com/200"
+                  alt="eagle-1246681_640.jpg"
+                />
+              </a>
+            </div>
+            <!-- /.galleryImage -->
+            <div class="galleryImage" id="rainbow">
+              <i class="fa fa-times cross"  onclick="remove('rainbow')" aria-hidden="true"></i>
+              <a
+                href="javascript:void(0);"
+                class="openBtn"
+                data-src="images/rainbow-background-1149610_640.jpg"
+              >
+                <img
+                  data-src="images/rainbow-background-1149610_640.jpg"
+                  src="https://via.placeholder.com/200"
+                  alt="rainbow-background-1149610_640.jpg"
+                />
+              </a>
+            </div>
+            <!-- /.galleryImage -->
+            <div class="galleryImage" id="station">
+              <i class="fa fa-times cross"  onclick="remove('station')" aria-hidden="true"></i>
+              <a
+                href="javascript:void(0);"
+                class="openBtn"
+                data-src="images/station-839208_640.jpg"
+              >
+                <img
+                  data-src="images/station-839208_640.jpg"
+                  src="https://via.placeholder.com/200"
+                  alt="station-839208_640.jpg"
+                />
+              </a>
+            </div>
+            <!-- /.galleryImage -->
+            <div class="galleryImage" id="wind">
+              <i class="fa fa-times cross"  onclick="remove('wind')" aria-hidden="true"></i>
+              <a
+                href="javascript:void(0);"
+                class="openBtn"
+                data-src="images/wind-farm-1747331_640.jpg"
+              >
+                <img
+                  data-src="images/wind-farm-1747331_640.jpg"
+                  src="https://via.placeholder.com/200"
+                  alt="wind-farm-1747331_640.jpg"
+                />
+              </a>
+            </div>
+            <!-- /.galleryImage -->
+          </section>
+          <!-- /#quickGallery -->
+
+          <div id="imagePreview" class="quickModal">
+            <div id="modalContent">
+              <span class="closeBtn"
+                ><i class="fa fa-times" aria-hidden="true"></i
+              ></span>
+              <img src="#" alt="" />
+            </div>
+          </div>
+          <!-- /#imagePreview -->
+        </div>
+        <footer class="row">
+          <p>&copy; Bhavesh Kumar</p>
+        </footer>
+      </div>
+
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+      <!-- Gallery JS script -->
+      <script src="js/gallery.js"></script>
+    </body></html
+></doctype>
